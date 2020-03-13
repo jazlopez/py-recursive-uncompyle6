@@ -27,7 +27,7 @@ class uncompyle6:
         pass
 
     @staticmethod
-    def check_uncompyle(self):
+    def check_uncompyle():
 
         try:
 
@@ -41,7 +41,7 @@ class uncompyle6:
             exit(e.errno)
 
     @staticmethod
-    def swap_extension(self, compiled):
+    def swap_extension(compiled):
 
         """
         Swap file extension from .pyc to .py
@@ -76,7 +76,7 @@ class uncompyle6:
         return clean
 
     @staticmethod
-    def search_pyc(self, use_directory):
+    def search_pyc(use_directory):
 
         """
         Search .pyc files
@@ -87,7 +87,7 @@ class uncompyle6:
         return glob.glob("/".join([use_directory, "*." + FROM_EXTENSION]))
 
     @staticmethod
-    def setup_directories(self, directories,  parent):
+    def setup_directories(directories,  parent):
 
         """
         Mimic file organization
@@ -111,7 +111,7 @@ class uncompyle6:
                 print("[INFO] - Done creating %s directory" % directory_name)
 
     @staticmethod
-    def uncompyle(self, locations, parent):
+    def uncompyle(locations, parent):
 
         for i in locations:
 
